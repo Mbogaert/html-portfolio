@@ -4,33 +4,37 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #8B647A;
+    --secondary-color: #000000;
+}
+
 body {
-    color: purple;
-    font-family: 'Courier New', Courier, monospace;
+    color: var(--secondary-color);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* apply styles to header */
 header {
     padding: 20px 20px;
-    background-color: purple;
+    background-color: var(--primary-color);
     display: flex;
     position: sticky;
     position: -webkit-sticky;
-    justify-content: space-evenly;
+    justify-content: space-between;
     z-index: 9999;
 }
 
 header h1 {
     font-weight: bold;
     font-size: 50px;
-    color: yellow;
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 header a {
     text-decoration: none;
-    color: yellow;
+    color: var(--secondary-color);
 }
 
 header nav {
@@ -52,8 +56,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: hotpink;
-    color: purple;
+    background: #646464;
+    color:white;
     border-radius: 20px;
     text-shadow: none;
 }
@@ -64,15 +68,16 @@ header nav ul li a:hover {
 /* Hero Styles Start */
 .hero {
     position: relative;
-    height: 400px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--primary-color);
 }
 
 .hero::before {
     content: "";
-    background-image: url(../images/dogs-header.jpg);
+    background-image: url(../images/hero-image.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -80,39 +85,41 @@ header nav ul li a:hover {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .hero-cta h2 {
     position: absolute;
-    color: hotpink;
+    color: yellow;
     font-size: 50px;
     line-height: 0.9;
     text-align: right;
     padding-right: 25px;
-    text-shadow: 0 0 10 rgba(0, 0, 0, 0.6);
 }
 
 /* hero styles end */
 
 .section-title {
     font-size: 50px;
-    color: hotpink;
+    color: var(--secondary-color);
     border-bottom: 2px solid;
     padding-bottom: 1px;
+    padding-top: 10px;
     padding-left: 10px;
     margin: 0px auto 35px auto;
 }
 
+/* about styles start */
+
 .about {
-    background-color: black;
+    background-color: var(--primary-color);
 }
 
 .mathew {
     width: 900px;
     margin: 0 20px 0 20px;
-    background: black;
-    color: purple;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     overflow: auto;
 }
 
@@ -127,10 +134,15 @@ header nav ul li a:hover {
     width: 65%;
 }
 
+.mathew-bio p {
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
 /* body of works start */
 .work {
     display: flexbox;
-    background-color: black;
+    background-color: var(--primary-color);
 }
 
 .works-grid-container {
@@ -146,19 +158,32 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     border: 2px solid;
-    color: hotpink;
+    color: var(--secondary-color);
     padding: 1em;
+    position: relative;
 }
 
 .works-grid-item a {
-    color: purple;
-    border: 2px solid;
+    color: yellow;
     padding: 10px;
-    background-color: gray;
-    font-size: 22px;
+    font-size: 30px;
     text-decoration: none;
     font-weight: bold;
 }
+
+a.overclick {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    text-shadow: -2px 3px 7px black;
+}
+    a.overclick:hover {
+        background-color: #fff;
+        opacity: 0.12;
+    }
 
 .box1 {
     grid-column: 1 / span 4;
@@ -198,14 +223,29 @@ header nav ul li a:hover {
 .box6 {
     grid-column: 5 / span 3;
     grid-row: 5 / span 2;
+    height: 200px;
     background-image: url(../images/vimeo.png);
     background-size: cover;
 }
 
+/* body of work end */
+
+/* contact styles start */
+
+.contact {
+    background: var(--primary-color);
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-left: 10px; 
+}
 /* footer styles start */
 
 footer {
-    background: purple;
+    background: var(--primary-color);
     width: 100%;
     padding: 20px 20px;
     display: flex;
@@ -214,7 +254,7 @@ footer {
 }
 
 footer h2 {
-    color: yellow;
+    color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
 }
