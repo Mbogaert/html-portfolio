@@ -51,7 +51,7 @@ header nav ul {
 
 header nav ul li a {
     padding: 15px;
-    font-size: 1.5vw;
+    font-size: 1.55vw;
     text-shadow: 0 0 10 rgba(0, 0, 0, 0.6);
 }
 
@@ -116,26 +116,21 @@ header nav ul li a:hover {
 }
 
 .mathew {
-    width: 900px;
+    width: flex;
     margin: 0 20px 0 20px;
     background: var(--primary-color);
     color: var(--secondary-color);
     overflow: auto;
+    display: flex;
 }
 
 .mathew img {
-    width: 35%;
-    float: left;
+  height: 200px;
+  width: auto;
 }
 
 .mathew-bio {
-    padding: 35px;
-    float: left;
-    width: 65%;
-}
-
-.mathew-bio p {
-    margin: 0 auto;
+    padding-left: 10px;
     line-height: 1.7;
 }
 
