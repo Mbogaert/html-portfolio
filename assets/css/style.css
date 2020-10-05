@@ -132,6 +132,7 @@ header nav ul li a:hover {
 .mathew img {
   height: 200px;
   width: auto;
+  border: 2px solid var(--secondary-color);
 }
 
 .mathew-bio {
@@ -373,6 +374,10 @@ footer h2 {
         color:white;
         border-radius: 20px;
         text-shadow: none;
+    }
+
+    .mathew {
+        display: block;
     }
 
     .box1, .box2, .box3, .box4, .box5, .box6 {
