@@ -23,11 +23,13 @@ header {
     position: -webkit-sticky;
     justify-content: space-between;
     z-index: 9999;
+    flex-wrap: wrap;
+    top: 0;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 48px;
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
@@ -255,3 +257,43 @@ footer h2 {
 }
 
 /* Footer styles end */
+
+/* media queries start */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+    
+      footer h2 p {
+        text-align: center;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+  }
+
+
+  @media screen and (max-width: 575px) {
+    footer h2 {
+        font-size: 20px;
+    }
+  }
+
+    /* media queries end */
