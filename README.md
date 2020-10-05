@@ -11,7 +11,7 @@ A website to show off my portfolio to future employers
 https://mbogaert.github.io/portfolio/
 
 ## Screenshot
-![The image displays a screenshot of the top of Mathew Bogaert's portfolio website](./assets/images/screen-shot.png)
+![The image displays a screenshot of the top of Mathew Bogaert's portfolio website](./assets/images/screen-shot002.png)
 
 ## Contribution
 Made with pride by Mathew Bogaert
