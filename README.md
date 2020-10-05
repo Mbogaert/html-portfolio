@@ -8,6 +8,7 @@ A website to show off my portfolio to future employers
 * CSS
 
 ## Website
+https://mbogaert.github.io/portfolio/
 
 ## Screenshot
 ![The image displays a screenshot of the top of Mathew Bogaert's portfolio website](./assets/images/screen-shot.png)
