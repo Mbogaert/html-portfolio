@@ -168,6 +168,11 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
+.works-grid-item p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 a.overclick {
     position: absolute;
     top: 0;
@@ -277,7 +282,7 @@ footer h2 {
 /* Footer styles end */
 
 /* media queries start */
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
@@ -316,6 +321,11 @@ footer h2 {
         text-decoration: none;
         font-weight: bold;
     }
+
+    .works-grid-item p {
+        font-weight: bold;
+        font-size: 12px;
+    }
     
     footer h2 {
         font-size: 20px;
@@ -335,6 +345,11 @@ footer h2 {
         font-size: 15px;
         text-decoration: none;
         font-weight: bold;
+    }
+
+    .works-grid-item p {
+        font-weight: bold;
+        font-size: 10px;
     }
 
     header nav ul li a:hover {
