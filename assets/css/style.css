@@ -237,7 +237,7 @@ a.overclick {
     grid-column: 5 / span 3;
     grid-row: 5 / span 2;
     height: 200px;
-    background-image: url(../images/vimeo.png);
+    background-image: url(../images/movie-search.png);
     background-size: cover;
 }
 
